@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="screen" href="../style/player.css">
+</head>
+<body>
+    
+    <div class="video-wrapper">
+        <video id="movie" contorls>
+            <source src="../movies/movie.mp4">
+            <source src="../movies/movie.webm" type="video/ogg; codecs='vp8, vorbis'"/>
+            <source src="../movies/movie.ogv" type="video/ogg; codecs='theora, vorbis'"/>
+            <p>Download movie as 
+                <a href="../movies/movie.mp4">MP4</a>,
+                <a href="../movies/movie.webm">WebM</a>,
+                or <a href="../movies/movie.ogv">Ogg</a>.
+            </p>
+        </video>
+    </div>
+
+    <script src="../scripts/player.js"></script>
+</body>
+</html>

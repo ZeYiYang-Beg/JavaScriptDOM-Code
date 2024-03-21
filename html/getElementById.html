@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What to Buy</h1>
+    <p title="a gentle reminder">Don't forget to but this stuff.</p>
+    <ul id="purchase">
+        <li>A tin of beans</li>
+        <li class="sale">Cheese</li>
+        <li class="sale important">Milk</li>
+    </ul>
+    <script>
+        var items = document.getElementsByTagName("li");
+        for (var i = 0; i < items.length; i++) {
+            console.log(typeof items[i]);
+        }
+        console.log(document.getElementsByTagName("*").length);
+        var shopping = document.getElementById("purchase");
+        var item = shopping.getElementsByTagName("*");
+        console.log(item.length);
+
+        console.log("the class finder function");
+        console.log(document.getElementsByClassName("sale important").length)
+    </script>
+</body>
+</html>
